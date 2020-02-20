@@ -1,0 +1,136 @@
+/* #EA4335 button {
+  background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+  height: 50px;
+  width: 100px;
+  transition: hover 90s linear;
+}
+button:hover {
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+} */
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+.login-container {
+  max-height: 100vh;
+}
+#side-image img {
+  height: 100vh;
+  width: 100%;
+}
+input {
+  box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2) !important;
+}
+#logo img {
+  height: 100px;
+}
+input {
+  padding: 10px 10px !important;
+  transition: all 7s ease-in-out;
+}
+input:focus {
+  border: 1px solid #ea4335 !important;
+}
+#login-data h3 {
+  font-size: 1rem;
+}
+.sign-up-ftpass,
+#forgote_passDiv a {
+  color: #ee0979;
+  cursor: pointer;
+  text-decoration: none;
+}
+#forgote_passDiv a {
+  font-size: 1rem;
+}
+#loginBtn {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 0;
+  border-radius: 4px;
+  z-index: 1;
+}
+#loginBtn:focus {
+  outline: none;
+}
+#loginBtn:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+  transition: all 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#loginBtn:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  /* top: 0; */
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+  background-size: 200%;
+  transition: all 0.6s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#loginBtn:hover#loginBtn:after {
+  opacity: 1;
+  visibility: visible;
+}
+#connet_with_div_btn button:focus {
+  outline: none;
+}
+/* #3B5998  //facebook
+#EA4335 //google */
+#connet_with_div button {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#connet_with_div button#facebook:hover {
+  background: #3b5998;
+  color: #fff;
+}
+#connet_with_div button#google:hover {
+  background: #ea4335;
+  color: #fff;
+}
+#connet_with_div button .connect-with-icon {
+  /* position: absolute; */
+  /* top: 30%; */
+  left: 20px;
+  font-size: 1.5rem;
+}
+#connet_with_div button#facebook {
+  /* background: #3b5998; */
+  border: 1px solid #3b5998;
+}
+#connet_with_div button#google {
+  border: 1px solid #ea4335;
+  margin-bottom: 4px;
+  /* background: #ea4335; */
+}
+.connet_with_div_btn .connect-with-icon {
+  position: absolute;
+  left: 20px;
+  vertical-align: middle;
+}
+.connet_with_div_btn p {
+  padding-top: 5px;
+  /* position: absolute; */
+  display: inline-block;
+}
